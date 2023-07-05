@@ -63,10 +63,10 @@ params:
     enabled: true # needs to be explicitly set
     title: RoHackss
     subtitle: "RoHackss advances in this world"
-    imageUrl: "<img location>"
+    imageUrl: "/boqueron.jpg"
     imageWidth: 120
     imageHeight: 120
-    imageTitle: my image
+    imageTitle: "profile icon"
     buttons:
       - name: Posts
         url: posts
@@ -86,7 +86,7 @@ params:
     - name: github
       url: "https://github.com/"
     - name: youtube
-      url: "https://https://www.youtube.com/@RoHackss"
+      url: "https://www.youtube.com/@RoHackss"
 
   analytics:
     google:
@@ -126,10 +126,6 @@ menu:
       name: tags
       url: /tags/
       weight: 20
-    - identifier: example
-      name: example.org
-      url: https://example.org
-      weight: 30
     - identifier: whoami
       name: whoami
       url: /about/whoami
