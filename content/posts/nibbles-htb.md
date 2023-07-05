@@ -3,7 +3,7 @@ title: "Nibbles"
 date: 2023-07-04T13:02:46+02:00
 tags: ["web","privesc","linux"]
 categories: ["hackthebox"]
-author: "Ayman Boulaich"
+author: "Ro Hackss"
 showToc: true
 TocOpen: false
 draft: false

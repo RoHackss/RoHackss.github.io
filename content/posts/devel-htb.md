@@ -3,7 +3,7 @@ title: "Devel"
 date: 2023-07-03T17:35:59+02:00
 tags: ["ftp","windows","web","privesc"]
 categories: ["hackthebox"]
-author: "Ayman Boulaich"
+author: "Ro Hackss"
 showToc: true
 TocOpen: false
 draft: false

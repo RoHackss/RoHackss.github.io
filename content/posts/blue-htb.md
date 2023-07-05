@@ -3,7 +3,7 @@ title: "Blue"
 date: 2023-06-26T12:51:31+02:00
 tags: ["smb","windows"]
 categories: ["hackthebox"]
-author: "Ayman Boulaich"
+author: "Ro Hacks"
 showToc: true
 TocOpen: false
 draft: false

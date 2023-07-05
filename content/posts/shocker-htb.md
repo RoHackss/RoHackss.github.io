@@ -3,7 +3,7 @@ title: "Shocker"
 date: 2023-06-24T23:12:03+02:00
 tags: ["privesc","web","linux"]
 categories: ["hackthebox"]
-author: "Ayman Boulaich"
+author: "Ro Hackss"
 showToc: true
 TocOpen: false
 draft: false

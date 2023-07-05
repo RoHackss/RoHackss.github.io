@@ -3,7 +3,7 @@ title: "Lame"
 date: 2023-06-24T11:30:03+00:00
 tags: ["smb","linux"]
 categories: ["hackthebox"]
-author: "Ayman Boulaich"
+author: "Ro Hackss"
 image: "/HTB/lame-icon.png"
 showToc: true
 TocOpen: false

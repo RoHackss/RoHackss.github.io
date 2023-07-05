@@ -3,7 +3,7 @@ title: "Legacy"
 date: 2023-06-26T00:50:22+02:00
 tags: ["smb","windows"]
 categories: ["hackthebox"]
-author: "Ayman Boulaich"
+author: "Ro Hackss"
 showToc: true
 TocOpen: false
 draft: false
