@@ -1,7 +1,7 @@
 ---
 title: "Lame"
 date: 2023-06-24T11:30:03+00:00
-tags: ["smb","linux"]
+tags: ["smb","linux","tcpdump"]
 categories: ["hackthebox"]
 author: "Ro Hackss"
 image: "/HTB/lame-icon.png"
@@ -49,6 +49,8 @@ editPost:
 - Searchsploit
 - smbclient
 - crackmapexec
+- tcpdump 
+
 
 ## Code Review & Exploitation
 
@@ -82,9 +84,38 @@ Then with searchsploit i do the same thing like bifore, but searching with a the
 
 ![Untitled](/HTB/lame-4.png)
 
+*OPTION 1*
+
 I attempted the "username map script" exploit ([CVE-2007–2447](http://cvedetails.com/cve/cve-2007-2447)), which appeared to be the most promising way to authenticate.
 
 ![Untitled](/HTB/lame-5.png)
+
+*OPTION 2*
+
+On this case we learn more and i thing that this is the most important. So we start searching with 'batcat' this:
+
+![Untitled](/HTB/descarga-exploit.png)
+
+In this exploit we can see that we can gain access to de machine by using a username like that:
+
+![Untitled](/HTB/exploit-analizado.png)
+
+Also how at first i had discovered that i could connect by Samba using -N (anonymous user), so lets connect to the machine using to tmp for example:
+
+```bash
+smbclient //10.10.10.3/tmp -N
+
+```
+
+Once connected we will open the help menu, and we can see that it has logon program, so we can authenticte like a user using
+what we have learned before, to test it I will try to send a ping and see if I get to receive it:
+
+![Untitled](/HTB/logon.png)
+
+![Untitled](/HTB/ping-recivido.png)
+
+We can see that I received the ping, so we already known that we can do a reverse shell instead of a ping...
+
 
 Finally, we gained access.
 
