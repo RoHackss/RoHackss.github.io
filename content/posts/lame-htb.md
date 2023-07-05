@@ -47,13 +47,14 @@ editPost:
 
 - Nmap
 - Searchsploit
-- Metasploit
+- smbclient
+- crackmapexec
 
 ## Code Review & Exploitation
 
-Upon running Nmap, I discovered three interesting open ports: SSH, FTP, and Samba.
+Upon running Nmap, I discovered multiple open ports, the three most interesting are: SSH(22), FTP(21), and Samba(445).
 
-![Untitled](/HTB/lame-1.png)
+![Untitled](/HTB/lame-escaneo.png)
 
 The FTP service is vsftpd 2.3.4, and my initial attempt was to connect anonymously. I managed to gain access, but it seemed limited. However, exploring through FTP did not yield much information.
 
@@ -64,6 +65,20 @@ In Searchsploit, I found a potential exploit for vsftpd 2.3.4.
 ![Untitled](/HTB/lame-3.png)
 
 Unfortunately, this exploit did not work effectively, so I decided to focus on the Samba service.
+I personaly always do a scan with smbclient and crackmapexec, as follows:
+
+```bash
+smbclient -L 10.10.10.3 -N
+crackmapexec smb 10.10.10.3
+```
+
+And it shows me some directories and information like if samba is signed (if isn't signed it's less secure). 
+
+![Untitled](/HTB/lame1.png)
+
+![Untitled](/HTB/lame3.png)
+
+Then with searchsploit i do the same thing like bifore, but searching with a the version of samba:
 
 ![Untitled](/HTB/lame-4.png)
 
