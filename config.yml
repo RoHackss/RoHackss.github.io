@@ -63,7 +63,7 @@ params:
     enabled: true # needs to be explicitly set
     title: RoHackss
     subtitle: "RoHackss advances in this world"
-    imageUrl: "/boqueron.jpg"
+    imageUrl: "/bacalao.jpg"
     imageWidth: 120
     imageHeight: 120
     imageTitle: "profile icon"
