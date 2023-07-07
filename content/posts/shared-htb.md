@@ -41,7 +41,7 @@ editPost:
 - Difficulty level: Medium
 - Room link: https://app.hackthebox.com/machines/Shared
 
-![Untitled](/HTB/Sarhed.png)
+![Untitled](/HTB/Shared.png)
 
 ## Tools Used
 
